@@ -1,6 +1,7 @@
 import 'package:crypto_wallet/core/routing/routes.dart';
 import 'package:crypto_wallet/features/auth/presentation/views/screens/login_screen.dart';
 import 'package:crypto_wallet/features/auth/presentation/views/screens/register_screen.dart';
+import 'package:crypto_wallet/features/home/presentation/views/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -13,6 +14,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         // Handle undefined or unknown routes gracefully
         return _errorRoute();
